@@ -1,0 +1,270 @@
+.carte__hero {
+  position: relative;
+  height: 45vh;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 48px;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.carte__hero img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.carte__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(27,67,50,0.4), rgba(10,30,20,0.78));
+}
+
+.carte__hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 40px;
+}
+
+.carte__infobar {
+  background: var(--vert);
+  padding: 20px 0;
+}
+
+.carte__infobar-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.carte__info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.carte__info-icon { font-size: 1.4rem; }
+
+.carte__info-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.carte__info-item strong {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--or);
+}
+
+.carte__info-item span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.carte__info-sep {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.15);
+}
+
+.carte__loading {
+  text-align: center;
+  padding: 24px;
+  color: var(--gris);
+  font-style: italic;
+}
+
+/* FILTRES */
+.carte__filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 24px;
+}
+
+.carte__filter-btn {
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--gris);
+  border: 1px solid var(--gris-clair);
+  background: var(--blanc);
+  transition: all 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.carte__filter-btn:hover,
+.carte__filter-btn.active {
+  background: var(--vert);
+  color: #fff;
+  border-color: var(--vert);
+}
+
+/* CATÉGORIE */
+.carte__categorie { margin-bottom: 56px; }
+
+.carte__cat-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.carte__cat-emoji { font-size: 1.6rem; }
+
+.carte__cat-header h2 {
+  font-size: 1.5rem;
+  color: var(--vert);
+  white-space: nowrap;
+}
+
+.carte__cat-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--or), transparent);
+}
+
+.carte__items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.carte__item {
+  padding: 20px 24px;
+  border: 1px solid var(--gris-clair);
+  background: var(--blanc);
+  transition: all 0.25s;
+}
+
+.carte__item:hover {
+  border-color: var(--or);
+  box-shadow: 0 4px 16px rgba(201,169,98,0.12);
+}
+
+.carte__item--tagged {
+  border-color: rgba(201,169,98,0.4);
+  background: var(--or-pale);
+}
+
+.carte__item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.carte__item-nom {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--vert);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.carte__item-tag {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--or);
+  color: var(--vert);
+  padding: 2px 8px;
+}
+
+.carte__item-prix {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: var(--or);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.carte__item-desc {
+  font-size: 0.88rem;
+  color: var(--gris);
+  line-height: 1.6;
+}
+
+/* VINS */
+.carte__vins { margin-bottom: 48px; }
+
+.carte__vins-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.carte__vin {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--gris-clair);
+}
+
+.carte__vin-nom {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  color: var(--vert);
+  min-width: 160px;
+}
+
+.carte__vin-sep { flex: 1; height: 1px; background: rgba(0,0,0,0.1); }
+
+.carte__vin-desc {
+  font-size: 0.85rem;
+  color: var(--gris);
+  flex: 1;
+}
+
+.carte__vin-prix {
+  font-family: 'Playfair Display', serif;
+  color: var(--or);
+  font-weight: 600;
+}
+
+.carte__allergenes {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: var(--gris);
+  padding: 12px 16px;
+  background: var(--gris-clair);
+  border-left: 3px solid var(--or);
+}
+
+/* CTA */
+.carte__cta {
+  text-align: center;
+  padding: 56px 0 80px;
+  border-top: 1px solid var(--gris-clair);
+}
+
+.carte__cta p {
+  font-size: 1.25rem;
+  color: var(--vert);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .carte__items-grid { grid-template-columns: 1fr; }
+  .carte__infobar-inner { flex-direction: column; align-items: flex-start; }
+  .carte__info-sep { display: none; }
+  .carte__hero-content { padding: 0 20px; }
+}

@@ -1,0 +1,230 @@
+.resa__hero {
+  position: relative;
+  height: 45vh;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 48px;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.resa__hero img { position: absolute; inset: 0; height: 100%; }
+
+.resa__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(27,67,50,0.4), rgba(10,30,20,0.78));
+}
+
+.resa__hero-content { position: relative; z-index: 2; padding: 0 40px; }
+
+.resa__infobar { background: var(--vert); padding: 20px 0; }
+
+.resa__infobar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resa__info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 32px;
+  font-size: 1.4rem;
+}
+
+.resa__info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.resa__info strong {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--or);
+}
+
+.resa__info span {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.resa__info-sep { width: 1px; height: 40px; background: rgba(255,255,255,0.15); }
+
+/* GRID */
+.resa__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  padding: 56px 0 80px;
+  align-items: start;
+}
+
+/* CALENDLY */
+.resa__calendly-header { margin-bottom: 28px; }
+
+.resa__calendly-placeholder {
+  background: var(--gris-clair);
+  border: 2px dashed rgba(27,67,50,0.2);
+  padding: 64px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.resa__placeholder-icon { font-size: 3rem; }
+
+.resa__calendly-placeholder h3 {
+  font-size: 1.4rem;
+  color: var(--vert);
+}
+
+.resa__calendly-placeholder p {
+  color: var(--gris);
+  font-size: 1.05rem;
+  max-width: 360px;
+  line-height: 1.6;
+}
+
+.resa__calendly-frame { }
+
+.resa__calendly-frame iframe {
+  display: block;
+  border: 1px solid var(--gris-clair);
+}
+
+.resa__calendly-fallback {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: var(--gris);
+  text-align: center;
+}
+
+.resa__calendly-fallback a {
+  color: var(--vert);
+  text-decoration: underline;
+}
+
+/* INFOS CARDS */
+.resa__infos { display: flex; flex-direction: column; gap: 20px; }
+
+.resa__card {
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  padding: 24px;
+}
+
+.resa__card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vert);
+  margin-bottom: 16px;
+  font-family: 'Jost', sans-serif;
+}
+
+/* HORAIRES */
+.resa__horaires { display: flex; flex-direction: column; gap: 16px; }
+
+.resa__saison { }
+
+.resa__saison-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 8px;
+}
+
+.resa__saison table { width: 100%; border-collapse: collapse; }
+
+.resa__saison td {
+  padding: 4px 0;
+  font-size: 0.85rem;
+  color: var(--gris);
+}
+
+.resa__saison td:first-child {
+  color: var(--vert);
+  font-weight: 600;
+  width: 80px;
+}
+
+.resa__saison .ferme { color: #dc3232; opacity: 0.6; }
+
+.resa__infos-list { display: flex; flex-direction: column; gap: 10px; }
+
+.resa__info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+}
+
+.resa__info-row span { color: var(--gris); }
+.resa__info-row strong { color: var(--vert); }
+
+/* PHONE */
+.resa__card--phone { background: var(--or-pale); border-color: rgba(201,169,98,0.3); }
+
+.resa__card--phone p { color: var(--gris); font-size: 0.9rem; margin-bottom: 16px; }
+
+.resa__phone-btn {
+  display: block;
+  text-align: center;
+  background: var(--vert);
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.06em;
+  transition: background 0.2s;
+}
+
+.resa__phone-btn:hover { background: var(--vert-clair); }
+
+/* BENEFITS */
+.resa__benefits {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resa__benefits li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.resa__benefit-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+
+.resa__benefits strong {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--vert);
+  margin-bottom: 2px;
+}
+
+.resa__benefits p {
+  font-size: 0.8rem;
+  color: var(--gris);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .resa__grid { grid-template-columns: 1fr; gap: 32px; }
+  .resa__infobar-inner { flex-direction: column; align-items: flex-start; }
+  .resa__info-sep { display: none; }
+  .resa__hero-content { padding: 0 20px; }
+}

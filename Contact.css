@@ -1,0 +1,234 @@
+.contact__hero {
+  position: relative;
+  height: 45vh;
+  min-height: 300px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 48px;
+  overflow: hidden;
+  padding-top: 72px;
+}
+
+.contact__hero img { position: absolute; inset: 0; height: 100%; }
+
+.contact__hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(27,67,50,0.4), rgba(10,30,20,0.78));
+}
+
+.contact__hero-content { position: relative; z-index: 2; padding: 0 40px; }
+
+.contact__hero-next {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.65);
+  margin-left: 4px;
+}
+
+.contact__seasonbar {
+  background: var(--vert-clair);
+  padding: 10px 0;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.contact__seasonbar strong { color: var(--or); }
+
+/* GRID */
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 56px 0;
+}
+
+.contact__infos { display: flex; flex-direction: column; gap: 20px; }
+
+.contact__card {
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  padding: 24px;
+}
+
+.contact__card h3 {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vert);
+  margin-bottom: 12px;
+}
+
+.contact__card p {
+  font-size: 0.9rem;
+  color: var(--gris);
+  line-height: 1.6;
+}
+
+.contact__map-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--vert);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.contact__map-btn:hover { color: var(--or); }
+
+.contact__phone {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: var(--vert);
+  font-weight: 700;
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.contact__phone:hover { color: var(--or); }
+
+.contact__phone-note {
+  font-size: 0.78rem !important;
+  color: var(--gris) !important;
+}
+
+.contact__paiements { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.contact__paiement-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  background: var(--gris-clair);
+  color: var(--vert);
+  letter-spacing: 0.04em;
+}
+
+.contact__infos-list { display: flex; flex-direction: column; gap: 8px; }
+
+.contact__info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+
+.contact__info-row span { color: var(--gris); }
+.contact__info-row strong { color: var(--vert); }
+
+.contact__social-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid var(--gris-clair);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--vert);
+  transition: all 0.2s;
+}
+
+.contact__social-btn:hover {
+  background: var(--vert);
+  color: #fff;
+  border-color: var(--vert);
+}
+
+/* HORAIRES TABLE */
+.contact__horaires { }
+
+.contact__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.contact__table th {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--or);
+  padding: 10px 14px;
+  text-align: left;
+  background: var(--vert);
+  border-bottom: 2px solid var(--or);
+}
+
+.contact__table td {
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--gris-clair);
+  color: var(--gris);
+}
+
+.contact__table td:first-child {
+  font-weight: 600;
+  color: var(--vert);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact__table tr.ferme td { color: #dc3232; opacity: 0.55; }
+.contact__table tr.ferme td:first-child { color: #dc3232; }
+
+.contact__table tr.today { background: var(--or-pale); }
+.contact__table tr.today td:first-child { color: var(--vert); font-weight: 700; }
+
+.contact__today-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--or);
+  color: var(--vert);
+  padding: 2px 6px;
+}
+
+.contact__status-live {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--gris-clair);
+  margin-bottom: 24px;
+}
+
+.contact__status-live p {
+  font-size: 0.82rem;
+  color: var(--gris);
+}
+
+.contact__cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* MAP */
+.contact__map {
+  padding-bottom: 80px;
+}
+
+.contact__map-header { margin-bottom: 28px; }
+
+.contact__map-frame {
+  overflow: hidden;
+  border: 1px solid var(--gris-clair);
+}
+
+.contact__itineraire-btn {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--vert);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.contact__itineraire-btn:hover { color: var(--or); }
+
+@media (max-width: 900px) {
+  .contact__grid { grid-template-columns: 1fr; gap: 32px; }
+  .contact__hero-content { padding: 0 20px; }
+}
