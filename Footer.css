@@ -1,0 +1,124 @@
+.footer {
+  background: var(--vert);
+  color: rgba(255,255,255,0.8);
+  padding: 72px 0 0;
+  margin-top: 80px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.footer__logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.footer__tagline {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 16px;
+}
+
+.footer__desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.65);
+}
+
+.footer__col h4 {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 16px;
+}
+
+.footer__col nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col nav a,
+.footer__col p {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s;
+}
+
+.footer__col nav a:hover { color: #fff; }
+
+.footer__horaires { font-size: 0.88rem; color: rgba(255,255,255,0.7); line-height: 1.7; }
+
+.footer__season {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--or);
+  margin-bottom: 4px;
+}
+
+.footer__phone {
+  display: block;
+  margin: 12px 0;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s;
+}
+.footer__phone:hover { color: #fff; }
+
+.footer__links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__links a {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer__links a:hover { color: var(--or); }
+
+.footer__bottom {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__bottom p {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+}
+
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer__bottom { flex-direction: column; text-align: center; }
+}
